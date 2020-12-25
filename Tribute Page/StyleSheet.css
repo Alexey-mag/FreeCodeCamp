@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-areas:
+     "title"
+     "subtitle"
+     "img"
+     "list"
+     "footer";
+     justify-items: center;
+     background-color: azure;
+     font-size: large;
+}
+.title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Langar', cursive;
+}
+.img {
+    grid-area: img;
+    display: flex grid;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.list {
+    grid-area: list;
+    font-family: 'Roboto', sans-serif;
+}
+.footer {
+    grid-area: footer;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    display: block;
+    width: fit-content;
+    height: auto;
+    max-width: fit-content;
+}
