@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+    <h1 id="title">Анти - НЛО форма</h1>
+    <p id="description">Заполните нашу форму на случай похищения Вас пришельцами!</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">ФИО</label>
+            <input type="text" class="form-control" name="name" placeholder="Введите имя" required>
+        </div>
+        <div class="form-group">
+            <label for="name" id="email-label">Email</label>
+            <input type="email" class="form-control" name="name" placeholder="Введите свой email" required>
+        </div>
+        <div class="form-group">
+            <label for="name" id="number-label">Количество отжиманий</label>
+            <input type="number" class="form-control" min="1" max="200" name="name" placeholder="Сколько можете отжаться?" required>
+        </div>
+        <div class="form-group">
+            <p>Кем вы видите себя через 100 лет?</p>
+            <select id="dropdown" class="form-control" name="role" required>
+                <option disabled selected value>Выберите себя будущего</option>
+                <option value="Sprout">Осьминог</option>
+                <option value="battle-ship">Боевой истребитель</option>
+                <option value="superhero">Супергероем</option>
+                <option value="squirrel">Злая белочка</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Если пришельцы будут зелеными - Вы будете отбиватся?</p>
+            <label>
+                <input name="attack-nlo" type="radio" checked value="yes">
+                Разумеется
+            </label>
+            <label>
+                <input name="attack-nlo" type="radio" value="maybe">
+                Возможно
+            </label>
+            <label>
+                <input name="attack-nlo" type="radio" value="no">
+                Нет! Пусть препарируют
+            </label>
+        </div>
+        <div id="form-group">
+            <p>Если вас просто возьмут покатать - какие галактики Вы захотите посетить?</p>
+            <label>
+                <input type="checkbox" value="Млечный путь">
+                Млечный путь
+            </label>
+            <label>
+                <input type="checkbox" value="Андромеда">
+                Андромеда
+            </label>
+            <label>
+                <input type="checkbox" value="Водоворот">
+                Водоворот
+            </label>
+            <label>
+                <input type="checkbox" value="Сигара">
+                Сигара
+            </label>
+            <label>
+                <input type="checkbox" value="Сомбреро">
+                Сомбреро
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Оставьте комментарий или пожелание для пришельцев</p>
+            <textarea name="comment" placeholder="Пишите комменты тут"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="button" type="submit" id="submit">Отправить</button>
+        </div>
+    </form>
+</div>
+</body>
