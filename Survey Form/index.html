@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <div class="container">
     <header class="header">
     <h1 id="title">Анти - НЛО форма</h1>
     <p id="description">Заполните нашу форму на случай похищения Вас пришельцами!</p>
     </header>
-    <form id="survey-form">
+    <form id="survey-form" class="form">
         <div class="form-group">
             <label id="name-label" for="name">ФИО</label>
-            <input type="text" class="form-control" name="name" placeholder="Введите имя" required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required>
         </div>
         <div class="form-group">
-            <label for="name" id="email-label">Email</label>
-            <input type="email" class="form-control" name="name" placeholder="Введите свой email" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" class="form-control" id="email"  name="email" placeholder="Введите свой email" required>
         </div>
         <div class="form-group">
-            <label for="name" id="number-label">Количество отжиманий</label>
-            <input type="number" class="form-control" min="1" max="200" name="name" placeholder="Сколько можете отжаться?" required>
+            <label for="number" id="number-label">Количество отжиманий</label>
+            <input type="number" class="form-control" id="number" name="number" min="1" max="200"  placeholder="Сколько можете отжаться?" required>
         </div>
         <div class="form-group">
             <p>Кем вы видите себя через 100 лет?</p>
@@ -34,48 +38,50 @@
         <div class="form-group">
             <p>Если пришельцы будут зелеными - Вы будете отбиватся?</p>
             <label>
-                <input name="attack-nlo" type="radio" checked value="yes">
+                <input class="input-radio" name="attack-nlo" type="radio" checked value="yes">
                 Разумеется
             </label>
             <label>
-                <input name="attack-nlo" type="radio" value="maybe">
+                <input class="input-radio" name="attack-nlo" type="radio" value="maybe">
                 Возможно
             </label>
             <label>
-                <input name="attack-nlo" type="radio" value="no">
+                <input class="input-radio" name="attack-nlo" type="radio" value="no">
                 Нет! Пусть препарируют
             </label>
         </div>
         <div id="form-group">
             <p>Если вас просто возьмут покатать - какие галактики Вы захотите посетить?</p>
             <label>
-                <input type="checkbox" value="Млечный путь">
+                <input type="checkbox" class="input-checkbox" value="Млечный путь">
                 Млечный путь
             </label>
             <label>
-                <input type="checkbox" value="Андромеда">
+                <input type="checkbox" class="input-checkbox" value="Андромеда">
                 Андромеда
             </label>
             <label>
-                <input type="checkbox" value="Водоворот">
+                <input type="checkbox" class="input-checkbox" value="Водоворот">
                 Водоворот
             </label>
             <label>
-                <input type="checkbox" value="Сигара">
+                <input type="checkbox" class="input-checkbox" value="Сигара">
                 Сигара
             </label>
             <label>
-                <input type="checkbox" value="Сомбреро">
+                <input type="checkbox" class="input-checkbox" value="Сомбреро">
                 Сомбреро
             </label>
         </div>
         <div class="form-group">
             <p>Оставьте комментарий или пожелание для пришельцев</p>
-            <textarea name="comment" placeholder="Пишите комменты тут"></textarea>
+            <textarea class="input-textarea" name="comment" placeholder="Пишите комменты тут"></textarea>
         </div>
         <div class="form-group">
-            <button class="button" type="submit" id="submit">Отправить</button>
+            <button class="submit-button" type="submit" id="submit">Отправить</button>
         </div>
     </form>
 </div>
 </body>
+
+
