@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header">
+    <div class="logo">
+        <img id="header-img" src="logo1.jpg" alt="company logo">
+    </div>
+    <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#features">Преимущества</a></li>
+            <li><a class="nav-link" href="#working-machines">Как работает</a></li>
+            <li><a class="nav-link" href="#price">Наши цены</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <section id="subscribe">
+        <h1>Восстановленные, настроенные, готовые к работе</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="Введите адрес эл. почты" required>
+            <input type="submit" id="submit" value="Хочу!" class="btn">
+        </form>
+    </section>
+    <section id="features">
+        <div class="grid">
+            <div class="icon">
+                <img src="check-all.png" alt="quality control">
+            </div>
+            <div class="description">
+                <h2>Качественные материалы</h2>
+                <p>Хоть и не столь хороши, как раньше, но все еще лучше, чем у конкурентов</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="cash-check.png" alt="">
+            </div>
+            <div class="description">
+                <h2>Полная проверка работоспособности</h2>
+                <p>Тестируем на всех валютах, во всех режимах работы</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <img src="car.png" alt="">
+            </div>
+            <div class="description">
+                <h2>Доставка и гарантия</h2>
+                <p>Доставим к Вам, где бы вы ни были - по России и за рубеж. Почти круглосуточная поддержка и гарантия производителя</p>
+            </div>
+        </div>
+    </section>
+    <section id="working-machines">
+        <iframe id="video" height="320" src="https://www.youtube-nocookie.com/embed/hTTGjOFolho?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section id="price">
+    <div class="product">
+        <div class="title">Newton FS</div>
+        <img src="red.png" alt="newton fs">
+        <h3>15000 рублей</h3>
+        <ol>
+            <li>Надежен, долговечен и износостоек</li>
+            <li>Способен выдерживать высокие нагрузки</li>
+            <li>Небольшие габариты, прост в обслуживании</li>
+        </ol>
+        <button class="btn">Купить</button>
+    </div>
+
+        <div class="product">
+            <div class="title">Newton PF</div>
+            <img src="blue.jpg" alt="newton fs">
+            <h3>40000 рублей</h3>
+            <ol>
+                <li>Двухсторонняя проверка подлинности</li>
+                <li>Сверка, считывание серийных номеров банкнот</li>
+                <li>Легкий и быстрый</li>
+            </ol>
+            <button class="btn">Купить</button>
+        </div>
+
+        <div class="product">
+            <div class="title">Kisan K2</div>
+            <img src="gray.jpg" alt="newton fs">
+            <h3>25000 рублей</h3>
+            <ol>
+                <li>Прост, быстр в загрузке</li>
+                <li>Автовыбор вылюты</li>
+                <li>Самые новые технологии в Ваших руках</li>
+            </ol>
+            <button class="btn">Купить</button>
+        </div>
+
+    </section>
+    <footer>
+        <ul>
+            <li><a target="_blank" href="https://deep2000.ru/">Узнать больше</a></li>
+            <li><a target="_blank" href="https://vk.com/shadow_mag">Контакты</a></li>
+        </ul>
+        <span>Copyright 2020, Shadow_mag Lab</span>
+    </footer>
+</div>
+</body>
+</html>
